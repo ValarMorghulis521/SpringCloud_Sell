@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ValarMorghulis521/config-repo.git
+          username: ValarMorghulis521
+          password: 217724.abc
+  rabbitmq:
+    host: 192.168.1.106
+    port: 5672
+    username: guest
+    password: guest
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
